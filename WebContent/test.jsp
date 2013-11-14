@@ -161,13 +161,14 @@
   		<div id="chart3" style="width:<%=graphWidth%>px; height:<%=graphHeight%>px;"></div>
 		
 	</td>
+	
 	<td>
 	 
 	<div id="checkboxes" style="border-style:solid; border-width:1px;">
 	<input type="checkbox" name="Total" value="Total" checked> Total<BR>
 	<input type="checkbox" name="Select All" value="Select All" checked> Select All<BR>
 	<%
-	<%--  for(i=1; i<=maxElement; i++) --%>
+		 for(i=1; i<=maxElement; i++) --%>
 		out.println("<input type=\"checkbox\" name=\"market" + i  + "\" value=\"market" +
 		i + "\" checked> market" + i +" (" + marketName[i-1] + ")"+  "<BR>" );
 	%>
