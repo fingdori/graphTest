@@ -2,8 +2,8 @@
 <html>
 <!-- HEAD -->
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR" />  
-<%@ page contentType="text/html;charset=EUC-KR" %>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />  
+<%@ page contentType="text/html;charset=UTF-8" %>
 
 <%@ page import="java.sql.*"%>
 <%@ page import="java.sql.PreparedStatement"%>
@@ -48,7 +48,7 @@
 	int maxElement	= 12;
 	String []marketName={
 			"softandroid.ru",
-			"¿ùµåº£½ºÆ®¼ÒÇÁÆ®¿þ¾î",
+			"ì›”ë“œë² ìŠ¤íŠ¸ì†Œí”„íŠ¸ì›¨ì–´",
 			"androidbest.ru",
 			"slideme",
 			"V3Mobile",
@@ -107,12 +107,12 @@
 <!-- BODY -->
 <body style="width:<%=bodyWidth%>px;">
 
-	<!-- ÆäÀÌÁö ¼±ÅÃ -->
+	<!-- íŽ˜ì´ì§€ ì„ íƒ -->
 	<table>
 	<tr>
 	<td><img src="styles/images/ahnlab.png" width="150px" height="30px"></td> 
-	<td style="font-size:35px;"><strong>&nbsp;&nbsp;&nbsp;¼öÁýÅë°è½Ã½ºÅÛ</strong></td>
-	<td> <input type="submit" value="¼¼ºÎ±â°£ÀÔ·Â" onclick="showBarGraph( 1, 2, 3);">	</td>
+	<td style="font-size:35px;"><strong>&nbsp;&nbsp;&nbsp;ìˆ˜ì§‘í†µê³„ì‹œìŠ¤í…œ</strong></td>
+	<td> <input type="submit" value="ì„¸ë¶€ê¸°ê°„ìž…ë ¥" onclick="showBarGraph( 1, 2, 3);">	</td>
 	</tr>
 	</table>
 
@@ -138,7 +138,7 @@
 </script>
  -->
  
-	<!-- ±â°£ ÀÔ·Â ¹Þ±â -->
+	<!-- ê¸°ê°„ ìž…ë ¥ ë°›ê¸° -->
  	<table>
 	<tr style="height:50px;"></tr>
  	<tr>
@@ -148,13 +148,13 @@
  	From: <input type="text" readonly value=<%=str_defaultFrom %> name="from" size="11" id="datepickerFrom" style="font-size:25px;">    
  	&nbsp; &nbsp; &nbsp; To: <input type="text" value=<%=str_defaultTo %> readonly name="to" size="11" id="datepickerTo" style="font-size:25px;">
  	&nbsp; &nbsp; &nbsp; 
- 	<input type="submit" value="±â°£ÀÔ·Â¿Ï·á" >
+ 	<input type="submit" value="ê¸°ê°„ìž…ë ¥ì™„ë£Œ" >
  	</form>
  	</strong>
    	</td>
   	</tr>
   	 	
-  	<!-- ±×·¡ÇÁ ±×¸®±â -->
+  	<!-- ê·¸ëž˜í”„ ê·¸ë¦¬ê¸° -->
   	
   	<tr>
   	<td>
@@ -167,7 +167,7 @@
 	<input type="checkbox" name="Total" value="Total" checked> Total<BR>
 	<input type="checkbox" name="Select All" value="Select All" checked> Select All<BR>
 	<%
-	<%--  for(i=1; i<=maxElement; i++) --%>
+		for(i=1; i<=maxElement; i++)
 		out.println("<input type=\"checkbox\" name=\"market" + i  + "\" value=\"market" +
 		i + "\" checked> market" + i +" (" + marketName[i-1] + ")"+  "<BR>" );
 	%>
@@ -179,14 +179,14 @@
 	
 </table>
 	
-	<!-- Ç¥ ±×¸®±â -->
+	<!-- í‘œ ê·¸ë¦¬ê¸° -->
 		
 	<!--   <table align="center" border="1" cellpadding="10" >  -->
 	<%-- <table id="dataTable"> --%>
 	<tr>
-	<th class="dataTableHeader">ÃâÃ³</th> <th class="dataTableHeader">¼öÁý App</th>
-	<th class="dataTableHeader">Unique App</th> <th class="dataTableHeader">¾Ç¼º App</th> 
-	<th class="dataTableHeader">Áßº¹ App</th>
+	<th class="dataTableHeader">ì¶œì²˜</th> <th class="dataTableHeader">ìˆ˜ì§‘ App</th>
+	<th class="dataTableHeader">Unique App</th> <th class="dataTableHeader">ì•…ì„± App</th> 
+	<th class="dataTableHeader">ì¤‘ë³µ App</th>
 	</tr>
 	<%
 	for(i=1; i<=maxElement; i++)
