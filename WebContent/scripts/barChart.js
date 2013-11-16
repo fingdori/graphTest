@@ -28,7 +28,7 @@ $(document).ready(
 
 				axes : {
 					xaxis : {
-						label : '��ó',
+						label : '마켓별',
 						renderer : $.jqplot.CategoryAxisRenderer,
 						ticks : ticks,
 						
@@ -48,7 +48,7 @@ $(document).ready(
 						// boundaries.
 						// Don't want to do that here.
 						tickOptions: {formatString: "%'d" }, 
-						label : 'App ��',
+						label : 'App 개수',
 						labelRenderer : $.jqplot.CanvasAxisLabelRenderer,
 						padMin : 0
 					}
@@ -58,11 +58,11 @@ $(document).ready(
 						"rgb(255, 0, 0)" ],
 
 				series : [ {
-					label : '���� App'
+					label : '전체 App'
 				}, {
 					label : 'Unique App'
 				}, {
-					label : '�Ǽ� App'
+					label : '악성 App'
 				} ],
 
 				legend : {
@@ -114,7 +114,7 @@ function showBarGraph(s1, s2, s3) {
 				// axes scaled as if data extended 10% above and below the
 				// actual range to prevent data points right on grid boundaries.
 				// Don't want to do that here.
-				label : 'App ��',
+				label : 'App 개수',
 				labelRenderer : $.jqplot.CanvasAxisLabelRenderer,
 				padMin : 0
 			}
