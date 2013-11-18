@@ -4,10 +4,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>읍써요</title>
+<title>Insert title here</title>
 </head>
 <body>
-<H1>페이지가... 안생겨요(404)</H1>
-<img src= "<%=request.getContextPath()%>/resources/images/error404.jpg">
+
 </body>
 </html>
